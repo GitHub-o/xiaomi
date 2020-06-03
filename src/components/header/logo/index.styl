@@ -1,0 +1,41 @@
+.logo {
+  position: relative;
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin-top: 23px;
+  background-color: #ff6700;
+  overflow: hidden;
+
+  .logo-lk {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    transition: left 0.5s;
+
+    &::before, &::after {
+      content: '';
+      float: left;
+      width: 55px;
+      height: 100%;
+      background-position: center center;
+    }
+
+    &::before {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAMAAABEQrEuAAAAYFBMVEVHcEz////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////1QUVpAAAAH3RSTlMA/YWMIvertJYezhON4STc+o5KAl7vxGElGCOUDxoBoki9eAAAAHZJREFUSMft07kSgkAURNFG3rC4oSjuev//L4mo0pKSmVB9N+vghC153v8VeG3T5AtJUgGEMcF7q7UklQCRgvkuVdBOiYMNnfYdwGxKlE/7CFCliEu0uJmZPaQ6WlwB6hRRufhSEYBC0hbI7tI5A5afPuh5v14P/UIpz92wFxwAAAAASUVORK5CYII=');
+    }
+
+    &::after {
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAMAAABEQrEuAAAAdVBMVEVHcEz////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////qLaloAAAAJnRSTlMA/BUDvSpSPELyD/mxN+oc/uPDyz8BOwZl89uh2lQjllbKZgjE9loFxu0AAACUSURBVEjH7dQ3DsMwDEBRuveW3p3673/ELEFgJ4YsLUEM6M98AzlQxGb7YcezIdjU9dUIhA44oQGIM4As1gZFAgBJoQmCkldloAWqhndNpQHcHZ0O7ihI5/S6pCPg5vORv1YCL+er3FOA5Z6BWoVYPIbE9qTeBIBIRCQCYPy6nbHpi0hEZGUiOk1VzPrgbh+x7T97AnfSKyjH8JsyAAAAAElFTkSuQmCC');
+    }
+  }
+
+  &:hover {
+    .logo-lk {
+      left: -55px;
+    }
+  }
+}

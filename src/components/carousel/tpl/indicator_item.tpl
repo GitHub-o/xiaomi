@@ -1,0 +1,1 @@
+<i class="car-indicator-item {{is_cur}}"></i>

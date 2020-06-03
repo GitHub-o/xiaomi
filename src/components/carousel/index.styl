@@ -1,0 +1,120 @@
+.my-carousel {
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+    outline: none;
+  }
+
+  .car-list-wrap {
+    height: 100%;
+
+    .car-list {
+      height: 100%;
+
+      .car-lk {
+        display: block;
+        height: 100%;
+        background-color: #f5f5f5;
+        cursor: default;
+      }
+    }
+  }
+
+  .car-indicators {
+    position: absolute;
+    z-index: 3;
+    left: 50px;
+    bottom: 30px;
+
+    .car-indicator-item {
+      position: relative;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+
+      &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      &::before {
+        top: 4px;
+        left: 4px;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+      }
+
+      &.cur::before {
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+
+      &.cur::after {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  &:hover {
+    .car-btn {
+      opacity: 1;
+    }
+  }
+
+  .car-btn {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    width: 30px;
+    height: 50px;
+    transform: translateY(-50%);
+    background-color: rgba(20, 20, 20, 0.2);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+    &:hover {
+      background-color: rgba(20, 20, 20, 0.4);
+    }
+  }
+
+  .car-btn.prev {
+    left: 0;
+    background-image: url('./icons/arrow left.png');
+    background-size: 20px 25px;
+    background-position: 6px 12px;
+    background-repeat: no-repeat;
+  }
+
+  .car-btn.next {
+    right: 0;
+    background-image: url('./icons/arrow right.png');
+    background-size: 20px 25px;
+    background-position: 6px 12px;
+    background-repeat: no-repeat;
+  }
+}

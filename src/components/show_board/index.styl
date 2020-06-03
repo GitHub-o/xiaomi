@@ -1,0 +1,43 @@
+.card-item {
+  float: left;
+  width: 234px;
+  height: 300px;
+  margin: 0 0 14px 14px;
+  background-color: #fff;
+  transition: box-shadow .3s;
+
+  & {
+    &:nth-of-type(5n + 1) {
+      margin-left: 0;
+    }
+    
+    &:hover {
+      box-shadow: 0 0 10px 3px #ccc;
+    }
+  }
+
+  .card-item-lk {
+    display: block;
+    height: 100%;
+
+    .card-img {
+      width: 160px;
+      height: 160px;
+      margin:18px auto;
+    }
+  }
+
+  .card-info {
+    text-align: center;
+
+    .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      margin-top: 5px;
+      color: #ff6700;
+    }
+  }
+}

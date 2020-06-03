@@ -1,0 +1,35 @@
+.board-title {
+  height: 58px;
+  margin-top: 30px;
+  line-height: 58px;
+  font-size: 16px;
+
+  .title {
+    float: left;
+
+    h3 {
+      font-size: 25px;
+    }
+  }
+
+  .more {
+    position: relative;
+    float: right;
+    color: #999;
+    margin-right: 20px;
+
+    &:hover {
+      color: #ff6700;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 22px;
+      right: -18px;
+      width: 15px;
+      height: 15px;
+      background: url('../../icons/more.png') center center / 15px 15px no-repeat;
+    }
+  }
+}

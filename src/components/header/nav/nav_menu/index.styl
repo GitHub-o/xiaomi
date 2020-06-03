@@ -1,0 +1,57 @@
+.nav-menu {
+  position: absolute;
+  top: 99px;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  box-shadow: 0 0 1px #ddd;
+  transition: height .5s;
+  overflow: hidden;
+
+  .item-card {
+    float: left;
+    width: 16.66%;
+    height: 100%;
+    padding: 15px 10px;
+
+    &:first-child  {
+      .item-card-lk {
+        .img-wrap {
+          border-left: none;
+        }
+      }
+    }
+
+    .item-card-lk {
+      display: block;
+      height: 100%;
+
+      .img-wrap {
+        width: 100%;
+        height: 160px;
+        border-left: 1px solid #eee;
+
+        img {
+          display: block;
+          width: 160px;
+          margin: 0 auto;
+        }
+      }
+
+      .card-info {
+        text-align: center;
+
+        .name {
+          font-size: 16px;
+        }
+
+        .price {
+          margin-top: 5px;
+          color: #ff6700;
+        }
+      }
+    }
+  }
+}
